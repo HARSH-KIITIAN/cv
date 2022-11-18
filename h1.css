@@ -1,0 +1,204 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    width: 10.2rem;
+    flex-direction: column;
+    align-items: left;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 4rem;
+    width: 100%;
+    margin: 3px 6px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Baloo Bhai 2', cursive;
+    display: flex;
+}
+
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.8rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('https://wallpaperaccess.com/full/702861.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 104%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#services-container::before{
+    content: "";
+    position: absolute;
+    background: url('https://t3.ftcdn.net/jpg/02/14/12/32/360_F_214123202_KGIiCLK8MZaYN6jKfLcteCZLqNTAtmJ3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 84.2%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    font-family: 'Bree Serif', serif;
+    border: 2px solid red;
+    border: 2px solid red;
+    padding: 12px;
+    margin: 3px 6px;
+    border-radius: 31px;
+    background-color: #baaa9f;
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 100px;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('https://img.freepik.com/premium-photo/judge-gavel-with-justice-lawyers-having-team-meeting-law-firm-background_1418-2118.jpg?w=2000') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#client-section{
+    position: relative;
+    height: 344px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#clients img{
+    height: 84px;
+}
+.client-item{
+    padding: 34px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('https://media.istockphoto.com/photos/themis-symbol-of-law-on-modern-background-picture-id1139699596?k=20&m=1139699596&s=612x612&w=0&h=yr_MF7LomKIgzwZrMtu4Ki5ToiaQWmSdQ7Zriadrais=') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    color: white;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 13px;
+}
+#home p{
+    font-family: 'Bree Serif', serif;
+    color: white;
+}
+.btn{
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background-color: red;
+}
+.center{
+    text-align: center;
+}
